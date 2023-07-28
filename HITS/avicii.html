@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVICII</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+nav {
+  background-color: black;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #fff;
+  color: #333;
+  border-radius: 20px;
+}
+
+nav .logo a {
+  color: #fff;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+nav .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .icons a {
+  color: #fff;
+  font-size: 24px;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+nav .icons a:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive Navbar */
+nav #check {
+  display: none;
+}
+
+nav .checkbtn {
+  font-size: 30px;
+  color: #fff;
+  display: none;
+}
+
+
+@keyframes navitem{
+    0%{
+        transform: translateY(5px);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+}
+
+.nav-item:hover{
+    background-color: black;
+}
+
+.items{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.item{
+    position: relative;
+    width: 25vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.img-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #250101;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.item-yapı:hover .img-overlay{
+ 
+    top:-100%;
+}
+
+.item img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform:scale(1.5);
+    transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1) 
+}
+
+.item-yapı:hover img{
+    transform: scale(1);
+}
+
+.item-kopya{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 50px;
+    font-family: "Mitera";
+    text-transform: uppercase;
+    line-height: 60px;
+    color: white;
+    z-index: 2;
+    transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+
+.item-name{
+    font-size:40px;
+}
+
+.item-name span{
+    font-family: "Neue Montreal";
+    font-size: 20px;
+    line-height: 120%;
+    text-transform: uppercase;
+    display: block;
+}
+
+.item-yapı:hover .item-kopya{
+    color:#fff;
+
+}
+
+.item-kopya .id{
+    font-size: 150px;
+}
+
+/*Responsive Item*/
+@media only screen and (max-width: 768px) {
+  .items {
+    flex-wrap: wrap;
+  }
+  .item {
+    width: 50%;
+    height: 50vh;
+  }
+}
+
+
+
+
+@media (max-width: 400px) {
+  nav {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-item {
+    margin: 10px;
+  }
+}
+
+footer{
+  background-color: black;
+}
+
+
+ .right-side{
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 50px;
+}
+
+
+.right-side li a i{
+  color: yellow;
+} 
+
+.right-side li a i:hover{
+  color: red;
+} 
+
+
+
+</style>
+    
+</head>
+<body>
+
+<div class="container">
+    <nav>   
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+       
+        <ul>
+          <li><a class="active" href="hits.html">Anasayfa</a></li>
+          <li><a href="alanwalker.html">Alan Walker Hits</a></li>
+          <li><a href="martingarrix.html">Martin Garrix Hits</a></li>
+          <li><a href="david-guetta.html">David-Guetta Hits</a></li>
+          <li><a href="davidguetta2.html">David-Guetta 2 Hits</a></li>
+        </ul>
+      </nav>
+<div class="items">
+
+<div class="item">
+<a href="https://www.youtube.com/watch?v=IcrbM1l_BoI&pp=ygURYXZpY2lpIHdha2UgbWUgdXA%3D">
+    <div class="item-yapı">
+     <img src="./img/avicii/avicii-Wake-me-up.jpg" alt="">
+        <div class="img-overlay"></div>
+        <div class="item-kopya">
+            <div class="item-name">
+               AVICII<span>WAKE-ME-UP</span>
+            </div>
+            <div class="id"></div>
+        </div>
+    </a>
+    </div>
+
+</div>
+
+
+<div class="item">
+<a href="https://www.youtube.com/watch?v=cHHLHGNpCSA&pp=ygUXYXZpY2lpIHdhaXRpbmcgZm9yIGxvdmU%3D">
+    <div class="item-yapı">
+        <img src="./img/avicii/waiting-for-love.jpg" alt="">
+        <div class="img-overlay"></div>
+        <div class="item-kopya">
+            <div class="item-name">
+                AVICII<span>WAITING FOR-LOVE</span>
+            </div>
+            <div class="id"></div>
+        </div>
+    </a>
+    </div>
+
+</div>
+<div class="item">
+<a href="https://www.youtube.com/watch?v=UtF6Jej8yb4&pp=ygUZYXZpY2lpIHdhaXRpbmcgdGhlIG5pZ2h0cw%3D%3D">
+    <div class="item-yapı">
+        <img src="./img/avicii/the-nights.jpg" alt="">
+        <div class="img-overlay"></div>
+        <div class="item-kopya">
+            <div class="item-name">
+                AVICII<span>THE-NIGHTS</span>
+            </div>
+            <div class="id"></div>
+        </div>
+    </a>
+    </div>
+
+</div>
+
+
+<div class="item">
+<a href="https://www.youtube.com/watch?v=_ovdm2yX4MA&pp=ygUVYXZpY2lpIHdhaXRpbmcgbGV2ZWxz">
+    <div class="item-yapı">
+        <img src="./img/avicii/avicii-levels.jpg" alt="">
+        <div class="img-overlay"></div>
+        <div class="item-kopya">
+            <div class="item-name">
+                AVICII<span>LEVELS</span>
+            </div>
+            <div class="id"></div>
+        </div>
+    </a>
+    </div>
+
+</div>
+
+
+<div class="item">
+<a href="https://www.youtube.com/watch?v=6Cp6mKbRTQY&pp=ygUaYXZpY2lpIHdhaXRpbmcgaGV5IGJyb3RoZXI%3D">
+    <div class="item-yapı">
+        <img src="./img/avicii/Avicii_Hey_Brother.jpg" alt="">
+        <div class="img-overlay"></div>
+        <div class="item-kopya">
+            <div class="item-name">
+                AVICII<span>HEY BROTHER</span>
+            </div>
+            <div class="id"></div>
+        </div>
+    </a>
+    </div>
+
+</div>
+
+
+<div class="item">
+<a href="https://www.youtube.com/watch?v=bek1y2uiQGA&pp=ygUiYXZpY2lpIHdhaXRpbmcgxLEgY291bGQgYmUgdGhlIG9uZQ%3D%3D">
+    <div class="item-yapı">
+        <img src="./img/avicii/AV_vs_NR_-_I_Could_Be_the_One.jpg" alt="">
+        <div class="img-overlay"></div>
+        <div class="item-kopya">
+            <div class="item-name">
+                AVICII<span>I COULD BE THE ONE</span>
+            </div>
+            <div class="id"></div>
+        </div>
+    </a>
+    </div>
+
+</div>
+
+<div class="item">
+<a href="https://www.youtube.com/watch?v=Qc9c12q3mrc&pp=ygUeYXZpY2lpIHdhaXRpbmcgYWRkaWN0ZWQgdG8geW91">
+    <div class="item-yapı">
+        <img src="./img/avicii/addicted-to-you.jpg" alt="">
+        <div class="img-overlay"></div>
+        <div class="item-kopya">
+            <div class="item-name">
+                AVICII<span>ADDICTED TO YOU</span>
+            </div>
+            <div class="id"></div>
+        </div>
+    </a>
+    </div>
+
+</div>
+
+
+<div class="item">
+<a href="https://www.youtube.com/watch?v=JDglMK9sgIQ&pp=ygUPYXZpY2lpIHRoZSBkYXlz">
+    <div class="item-yapı">
+        <img src="./img/avicii/the-days.jpg">
+        <div class="img-overlay"></div>
+        <div class="item-kopya">
+            <div class="item-name">
+                AVICII<span>THE-DAYS</span>
+            </div>
+            <div class="id"></div>
+        </div>
+    </a>
+    </div>
+
+</div>
+
+
+<div class="item">
+<a href="https://www.youtube.com/watch?v=vQ3XgMKAgxc&pp=ygUWYXZpY2lpIGxvbmVseSB0b2dldGhlcg%3D%3D">
+    <div class="item-yapı">
+        <img src="./img/avicii/Avicii_Lonely_Together.png" alt="">
+        <div class="img-overlay"></div>
+        <div class="item-kopya">
+            <div class="item-name">
+                AVICII<span>LONELY TOGETHER</span>
+            </div>
+            <div class="id"></div>
+        </div>
+    </a>
+    </div>
+
+</div>
+
+
+<div class="item">
+<a href="https://www.youtube.com/watch?v=WRz2MxhAdJo&pp=ygUSYXZpY2lpIHdpdGhvdXQgeW91">
+    <div class="item-yapı">
+        <img src="./img/avicii/without-you.jpg" alt="">
+        <div class="img-overlay"></div>
+        <div class="item-kopya">
+            <div class="item-name">
+                AVICII<span>WITHOUT YOU "AUDİO"</span>
+            </div>
+            <div class="id"></div>
+        </div>
+    </a>
+    </div>
+
+</div>
+</div>
+</div>
+
+
+    
+<footer>
+    <ul class="right-side">
+                    <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-spotify"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-soundcloud"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+  </footer>
+  
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+</body>
+</html>

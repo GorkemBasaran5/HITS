@@ -1,0 +1,326 @@
+ * {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   list-style: none;
+ }
+ body {
+  margin: 0;
+  padding: 0;
+   width: 100%;
+   height: 100%;
+   background-image: url("img/concert.webp"); 
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+
+ .navbar {
+   background-image: url("img/concert.webp");
+   background-size: cover;
+   background-repeat: no-repeat;
+   font-size: 25px;
+   font-style: italic;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+ }
+
+ h2 {
+   transition: 0.8s;
+ }
+
+ a {
+   transition: 0.6s;
+ }
+
+ a:hover {
+   color: red;
+   background: tan;
+ }
+
+ h2:hover {
+   color: red;
+ }
+
+
+ .acıklama {
+   color: white;
+   font-size: 40px;
+   text-align: center;
+ }
+
+ .art1 {
+   background-image: url(img/alanwalker.png);
+   background-size: cover;
+   border-radius: 50px;
+   width: 300px;
+   height: 300px;
+   padding: 5px;
+   text-align: center;
+   position: absolute;
+   top: 300px;
+   left: 200px;
+   color: white;
+   text-decoration: none;
+   font-size: 25px;
+   transition: transform 0.3s ease-in-out;
+   animation: art1animasyon 3s linear 0.1s infinite alternate;
+   
+
+ }
+
+ .art1:hover {
+  filter: brightness(1.5);
+   transform: scale(1.1);
+ }
+
+
+ @keyframes art1animasyon {
+
+    0% {
+     transform: translateY(-50px);
+   }
+
+   50% {
+     transform: translateX(75px);
+   }
+
+   75% {
+     transform: translateY(-50px)
+   }
+
+   100% {
+     transform: translateX(-75px);
+   } 
+
+ } 
+
+ .art2 {
+   background-image: url(img/avicii.jpg);
+   background-size: cover;
+   border-radius: 50px;
+   width: 300px;
+   height: 300px;
+   padding: 5px;
+   text-align: center;
+   position: absolute;
+   top: 300px;
+   right: 200px;
+   color: white;
+   text-decoration: none;
+   font-size: 25px;
+   transition: transform 0.3s;
+   animation: art2animasyon 3s linear 0.1s infinite alternate;
+ }
+
+ .art2:hover {
+  filter: brightness(1.5);
+  transform: scale(1.2);
+ }
+
+  @keyframes art2animasyon {
+
+   0% {
+     transform: translateX(50px);
+   }
+
+   50% {
+     transform: translateY(-75px);
+   }
+
+   75% {
+     transform: translateX(50px)
+   }
+
+   100% {
+     transform: translateY(-75px);
+   }
+
+ }
+
+ .art3{
+  background-image: url(img/david-guetta/david-guetta.webp);
+   background-size: cover;
+   border-radius: 50px;
+   width: 300px;
+   height: 300px;
+   padding: 5px;
+   text-align: center;
+   position: absolute;
+   top: 700px;
+   left: 200px;
+   color: white;
+   text-decoration: none;
+   font-size: 25px;
+   transition: transform 0.3s ease-in-out;
+   z-index: 1;
+   animation: art3animasyon 3s linear 0.1s infinite alternate;
+
+ }
+
+
+ .art3:hover {
+  filter: brightness(1.5);
+   transform: scale(1.1);
+ }
+
+ @keyframes art3animasyon {
+
+   0% {
+     transform: translateY(-50px);
+   }
+
+   50% {
+     transform: translateX(75px);
+   }
+
+   75% {
+     transform: translateY(-50px)
+   }
+
+   100% {
+     transform: translateX(-75px);
+   }
+
+ }
+
+ .art4 {
+  background-image: url(img/martin\ garrix.png);
+  background-size: cover;
+  border-radius: 50px;
+  width: 300px;
+  height: 300px;
+  padding: 5px;
+  text-align: center;
+  position: absolute;
+  top: 700px;
+  right: 200px;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  transition: transform 0.3s ease-in-out;
+  animation: art4animasyon 3s linear 0.1s infinite alternate;
+  z-index: 1;
+
+ }
+
+
+ .art4:hover {
+  filter: brightness(1.5);
+   transform: scale(1.1);
+ }
+ 
+ @keyframes art4animasyon {
+
+   0% {
+     transform: translateX(50px);
+   }
+
+   50% {
+     transform: translateY(-75px);
+   }
+
+   75% {
+     transform: translateX(50px)
+   }
+
+   100% {
+     transform: translateY(-75px);
+   }
+
+ }
+
+footer{
+  background-color: purple;
+  
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+ .right-side{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 50px;
+  
+}
+
+.right-side li a i{
+  color: yellow;
+} 
+
+
+
+
+
+ .acıklama2 {
+   color: white;
+   font-size: 20px;
+ }
+
+ a {
+   color: white;
+ }
+
+
+ .acıklama {
+   background-color: rgb(0, 98, 255); 
+   animation: animasyon 1s linear infinite;
+ }
+
+
+
+ @keyframes animasyon {
+   0% {
+     opacity: 1;
+   }
+
+   50% {
+     opacity: 0;
+   }
+
+   100% {
+     opacity: 1;
+   }
+ }
+
+
+
+ @media screen and (max-width: 768px) {
+   .acıklama {
+     color: red;
+   }
+
+   .footer {
+     color: red;
+   }
+
+   h2 a {
+     color: red;
+   }
+
+
+   .art1{
+    left: 100px;
+    top : 70%;
+   }
+
+   .art2{
+    left: 100px;
+    top: 130%;
+   }
+
+   .art3{
+    left: 100px;
+    top: 190%;
+   }
+
+   .art4{
+    left: 100px;
+    top: 250%;
+   }
+ }

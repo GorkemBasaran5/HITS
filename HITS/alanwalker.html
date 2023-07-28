@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Alan Walker</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			list-style-type: none;
+			text-decoration: none;
+		}
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+    background-color: #DF2E38;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+
+header {
+	background-color: #1c1c1c;
+	color: #fff;
+	padding: 20px 0;
+}
+
+header h1 {
+	top: 50%;
+    margin-block-start: -10px;
+	float: left;
+	font-size: 24px;   
+}
+
+
+nav {
+	float: right;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	float: left;
+	margin-left: 20px;
+}
+
+nav li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	color: #ccc;
+}
+
+
+#hero {
+	background-image: url(hero-bg.jpg);
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	padding: 100px 0;
+	text-align: center;
+}
+
+#hero h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 48px;
+}
+
+#hero p {
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 30px;
+}
+
+.button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #fff;
+	color: #1c1c1c;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+.button:hover {
+	background-color: #ccc;
+}
+
+
+#music {
+	padding: 100px 0;
+	text-align: center;
+}
+
+#music h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 36px;
+	margin-bottom: 50px;
+}
+
+.song {
+	display: inline-block;
+	margin: 0 20px;
+	text-align: left;
+}
+
+.song h3 {
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.song p {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+
+footer {
+	background-color: #1c1c1c;
+	color: #fff;
+	padding: 20px 0;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+footer a {
+	margin: 0;
+	padding: 0;
+	font-size: 30px;
+}
+footer a i{
+	color: red;
+}
+footer .container{
+	display: flex;
+	gap: 150px;
+	justify-content:space-around;
+}
+footer a i:hover{
+	color: black;
+	background-color: blue;
+}
+
+.cerceve {
+            width: 50%;
+            height: auto;
+            overflow: hidden;
+            border: 4px solid rgb(30, 26, 26);
+            box-sizing: border-box;
+            position: relative;
+            top: 4px;
+            left: 25%;
+            align-items: center;
+        }
+        .galeri {
+            position: relative; 
+            display: flex;
+            height: auto;
+            left: 5%;
+            animation: slayt 10s infinite alternate;
+
+        }
+        .galeri img {
+            width: 100%;
+            max-height: 420px;
+            float: left;
+        }
+        @keyframes slayt {
+            0% {left:0%;}
+            20%{left:0%;}
+            25%{left:-100%;}
+            45%{left:-100%;}
+            50%{left:-200%;}
+            70%{left:-200%;}
+            75%{left:-300%;}
+            95%{left:-300%;}
+        }
+
+    </style>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1>Alan Walker</h1>
+			<nav>
+				<ul>
+					<li><a href="hits.html">Ana Sayfa</a></li>
+					<li><a href="martingarrix.html">Martin Garrix</a></li>
+                    <li><a href="avicii.html">Avicii</a></li>
+					<li><a href="david-guetta.html">David-Guetta</a></li>
+					<li><a href="davidguetta2.html">David Guetta-2</a></li>
+					
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+ 
+
+	<section id="hero">
+		<div class="container">
+			<h2>Alan Walker</h2>
+			<p>Alan Walker, Norveçli bir DJ ve plak yapımcısıdır. En çok, 2015 yılında yayınladığı "Faded" adlı single'ı ile on farklı ülkede platin sertifikaları alan başarısıyla tanınmaktadır. Diğer popüler şarkıları arasında "Alone", "Sing Me to Sleep" ve "The Spectre" bulunur.</p>
+			<a href="#" class="button">Listen Now</a>
+		</div>
+	</section>
+   <div class="cerceve">
+        <div class="galeri">
+            <img src="img/alanwalker/faded.jpg" alt="">
+            <img src="img/alanwalker/alone.jpg" alt="">
+            <img src="img/alanwalker/the spectre.png" alt="">
+            <img src="img/alanwalker/sing me to sleep.jpg" alt="">
+        </div>
+    </div>
+
+	<section id="music">
+		<div class="container">
+			<h2>Müzik</h2>
+			<div class="song">
+				<h3>Faded</h3>
+				<p>Yayınlanma Tarihi: 2015</p>
+				<audio controls>
+					<source src="./Alan-Walker Music/Alan-Walker-Faded.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="song">
+				<h3>Alone</h3>
+				<p>Yayınlanma Tarihi: 2016</p>
+				<audio controls>
+					<source src="./Alan-Walker Music/Alan Walker  Alone.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="song">
+				<h3>Sing Me to Sleep</h3>
+				<p>Yayınlanma Tarihi: 2016</p>
+				<audio controls>
+					<source src="./Alan-Walker Music/Alan Walker  Sing Me To Sleep.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<a href=""> <i class="fa-brands fa-youtube"></i></a>
+			<a href=""><i class="fa-brands fa-soundcloud"></i></a> 
+			<a href=""><i class="fa-brands fa-spotify"></i></a> 
+			<a href=""><i class="fa-brands fa-youtube"></i> </a> 
+		</div>
+	</footer>
+
+
+
+
+
+
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+</body>
+</html>

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin Garrix</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+
+nav {
+			background-color: #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+			height: 60px;
+		}
+
+		nav ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+		}
+
+		nav ul li {
+			position: relative;
+		}
+
+		nav ul li a {
+			color: #fff;
+            color: #22A39F;
+			text-decoration: none;
+			padding: 0 20px;
+			height: 100%;
+			display: flex;
+			align-items: center;
+		}
+
+        nav ul li a:hover{
+            background-color: #F3EFE0;
+        }
+		nav ul li ul {
+			position: absolute;
+			top: 60px;
+			background-color: #333;
+			display: none;
+		}
+
+		nav ul li:hover ul {
+			display: block;
+		}
+
+		nav ul li ul li {
+			display: block;
+		}
+
+.left-side{
+    float: left;
+    
+}
+
+.left-side img{
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    animation: leftside 3s linear infinite alternate
+}
+@keyframes leftside {
+            from{
+                transform:scaleY(1.1);
+            }    
+            to{
+                transform: scaleX(1.1);
+            }
+}
+
+.animalsp{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: white;
+        position: absolute;
+        top: 25%;
+        left: 25%;
+}
+
+
+
+
+.left-side2{
+    float: left;
+    
+}
+
+.left-side2 img{
+    position: absolute;
+    top: 70%;
+    left: 2%;
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    animation: leftside2 3s linear infinite alternate
+}
+@keyframes leftside2 {
+            from{
+                transform:scaleY(1.1);
+            }    
+            to{
+                transform: scaleX(1.1);
+            }
+}
+
+.lovep{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: white;
+        position: absolute;
+        top: 85%;
+        left: 25%;
+}
+
+
+
+.left-side3{
+    float: left;
+    
+}
+
+.left-side3 img{
+    position: absolute;
+    top: 130%;
+    left: 2%;
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    animation: leftside3 3s linear infinite alternate
+}
+@keyframes leftside3 {
+            from{
+                transform:scaleY(1.1);
+            }    
+            to{
+                transform: scaleX(1.1);
+            }
+}
+
+.lonelyp{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: white;
+        position: absolute;
+        top: 150%;
+        left: 25%;
+}
+
+
+.left-side4{
+    float: left;
+    
+}
+
+.left-side4 img{
+    position: absolute;
+    top: 190%;
+    left: 2%;
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    animation: leftside4 3s linear infinite alternate
+}
+@keyframes leftside4 {
+            from{
+                transform:scaleY(1.1);
+            }    
+            to{
+                transform: scaleX(1.1);
+            }
+}
+
+.speakersp{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: white;
+        position: absolute;
+        top: 205%;
+        left: 25%;
+}
+
+
+.left-side5{
+    float: left;
+    
+}
+
+.left-side5 img{
+    position: absolute;
+    top: 250%;
+    left: 2%;
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    animation: leftside5 3s linear infinite alternate
+}
+@keyframes leftside5 {
+            from{
+                transform:scaleY(1.1);
+            }    
+            to{
+                transform: scaleX(1.1);
+            }
+}
+
+.foryoup{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: white;
+        position: absolute;
+        top: 265%;
+        left: 25%;
+}
+
+.disco-ball{
+    float: right;
+}
+
+.disco-ball img{
+    position: absolute;
+    top: 25%;
+    right: 0;
+    height: 500px;
+    
+    z-index: -1;
+    animation: ball 3s linear infinite alternate;
+}
+@keyframes ball {
+    from{
+        transform: translateY(15px);
+        z-index: index -1;
+    }
+    to{
+        transform: translateY(-5px);
+        z-index: -1;
+    }
+}
+
+
+.headphone img{
+    position: absolute;
+    right: 0;
+    top: 150%;
+    z-index: -1;
+}
+
+button{
+	background-color: #ffffff; 
+  border: none;
+  color: white;
+  padding: 10px 20px; 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+}
+button:hover{
+	color:black ;
+	background-color: red;
+}
+button a:hover{
+    color: black;
+}
+
+
+footer{
+  background-color: purple;
+  position: fixed;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    overflow:hidden;
+}
+
+
+ .right-side{
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 50px;
+}
+
+
+.right-side li a i{
+  color: yellow;
+} 
+
+
+
+
+@media screen and (max-width: 768px) {
+    .disco-ball img{
+        display: none;
+    }
+
+
+  
+  
+    .left-side{
+      float: none;
+    } 
+    .left-side img{
+        position: none;
+        top: 30%;
+        left: 20%;
+        height: 200px;
+    }
+    .animalsp{
+        top: 65%;
+        right: 30%;
+        align-items: center;
+        font-size: 10px;
+    }
+
+    .left-side2{
+        float: none;
+    }
+    .left-side2 img{
+        position: none;
+        top: 105%;
+        left: 20%;
+        height: 200px;
+    }
+    .lovep{
+        top: 140%;
+        right: 30%;
+        font-size: 10px;
+        align-items: center;
+    }
+
+    .left-side3{
+        float: none;
+    }
+    .left-side3 img{
+        position: none;
+        top: 180%;
+        left: 20%;
+        height: 200px;
+    }
+
+    .lonelyp{
+        top: 215%;
+        right: 30%;
+        font-size: 10px;
+        align-items: center;
+    }
+    .left-side4{
+        float: none;
+    }
+    .left-side4 img{
+        position: none;
+        top: 260%;
+        left: 20%;
+        height: 200px;
+    }
+    .speakersp{
+        top: 300%;
+        right: 30%;
+        font-size: 10px;
+        align-items: center;
+    }
+    .left-side5{
+        float: none;
+    }
+    .left-side5 img{
+        position: none;
+        top: 340%;
+        left: 20%;
+        height: 200px;
+    }
+    .foryoup{
+        top: 375%;
+        right: 30%;
+        font-size: 10px;
+        align-items: center;
+    }
+    
+}
+
+    </style>
+</head>
+<body>
+
+
+
+<nav>
+    <ul>
+        <li><a href="hits.html">Anasayfa</a></li>
+        <li><a href="alanwalker.html">Alan Walker Hits</a></li>
+        <li><a href="avicii.html">Avicii Hits</a></li>
+        <li><a href="david-guetta.html">David Guetta Hits</a></li>
+        <li><a href="davidguetta2.html">David Guetta Hits 2</a></li>
+    </ul>
+</nav>
+<div class="left-side">
+    
+    <img src="./img/martingarrix/animals.jpg" alt="">
+</div>
+
+<div class="animalsp">
+<p>MARTIN GARRIX - ANIMALS</p>
+<br>
+<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem molestiae aspernatur facere tempore, laborum dolorum totam ratione quam maxime non et, architecto optio atque. Quae nemo repellendus esse ex illo?
+    <br>
+    <br>
+    <button><a href="https://www.youtube.com/watch?v=gCYcHz2k5x0">MÜZİĞE ULAŞMAK İÇİN TIKLAYINIZ</a></button>
+</p>
+</div>
+
+<div class="left-side2">
+    <img src="./img/martingarrix/in-the-name-of-love.jpg" alt="">
+</div>
+
+<div class="lovep">
+    <p>MARTIN GARRIX - IN THE NAME OF LOVE</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat illo reprehenderit voluptatibus quas! Vel voluptates ipsum, eaque error dicta magni ullam dolorum corrupti voluptatibus placeat tempora harum atque animi minima! <br>
+        <br>
+        <button><a href="https://www.youtube.com/watch?v=e2vBLd5Egnk">MÜZİĞE ULAŞMAK İÇİN TIKLAYINIZ</a></button>
+    </p>
+</div>
+ 
+<div class="left-side3">
+    <img src="./img/martingarrix/scared-to-be-lonely.jpg" alt="">
+</div>
+<div class="lonelyp">
+    <p> Martin Garrix,Dimitri Vegas, Like Mike - Tremor</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam hic accusamus velit tempora maiores saepe. Reiciendis minima rerum similique corporis tenetur atque quos esse aspernatur voluptatibus voluptatum, veniam tempore dolorem?
+        <br>
+        <br>
+         <button><a href="https://www.youtube.com/watch?v=e2vBLd5Egnk">MÜZİĞE ULAŞMAK İÇİN TIKLAYINIZ</a></button></p>
+</div>
+
+<div class="left-side4">
+    <img src="./img/martingarrix/speakers.jpg" alt="">
+</div>
+<div class="speakersp">
+    <p>Martin Garrix & Afrojack - Turn Up The Speakers</p>
+    <br>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam architecto exercitationem tenetur consectetur dolor, vero suscipit incidunt quae vitae! Facere suscipit veritatis nihil rem voluptatibus! Provident id doloribus reiciendis eligendi.
+        <br>
+        <br>
+        <button><a href="https://www.youtube.com/watch?v=dzHdo4yxidc">MÜZİĞE ULAŞMAK İÇİN TIKLAYINIZ</a></button>
+    </p>
+    
+</div>
+
+
+<div class="left-side5">
+    <img src="./img/martingarrix/there-for-you1.png" alt="">
+</div>
+<div class="foryoup">
+    <p>Martin Garrix & Troye Sivan - There For You</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nostrum veniam rem possimus deserunt dignissimos, molestias doloribus culpa labore, repudiandae, minima reiciendis porro ipsum dolor qui facilis repellat eos saepe.
+        <br>
+        <br>
+        <button><a href="https://www.youtube.com/watch?v=pNNMr5glICM">MÜZİĞE ULAŞMAK İÇİN TIKLAYINIZ</a></button>
+    </p>
+</div>
+
+
+<div class="disco-ball">
+
+    <img src="./img/martingarrix/ball.png" alt="">
+
+</div>
+
+
+
+
+
+
+<footer>
+    <ul class="right-side">
+                    <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-spotify"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-soundcloud"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+  </footer>
+  
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+</body>
+</html>

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAVID GUETTA 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #1A120B;
+}
+
+
+header {
+  background-color: #3C2A21;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+.logo a {
+  color: #fff;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #D5CEA3;
+  color: #333;
+}
+
+
+
+
+
+.right-side{
+    float: right;
+    
+}
+
+.right-side img{
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    animation: rightside 3s linear infinite alternate
+}
+@keyframes rightside {
+            from{
+                transform:scaleY(1.1);
+            }    
+            to{
+                transform: scaleX(1.1);
+            }
+}
+
+.titaniump{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: white;
+        position: absolute;
+        top: 25%;
+        right: 25%;
+}
+
+
+
+
+.right-side2{
+    float: right;
+    
+}
+
+.right-side2 img{
+    position: absolute;
+    top: 70%;
+    right: 2%;
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    animation: rightside2 3s linear infinite alternate
+}
+@keyframes rightside2 {
+            from{
+                transform:scaleY(1.1);
+            }    
+            to{
+                transform: scaleX(1.1);
+            }
+}
+
+.mamap{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: white;
+        position: absolute;
+        top: 85%;
+        right: 25%;
+}
+
+
+
+
+
+.right-side3{
+    float: right;
+    
+}
+
+.right-side3 img{
+    position: absolute;
+    top: 130%;
+    right: 2%;
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    animation: rightside3 3s linear infinite alternate
+}
+@keyframes rightside3 {
+            from{
+                transform:scaleY(1.1);
+            }    
+            to{
+                transform: scaleX(1.1);
+            }
+}
+
+.hardp{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: white;
+        position: absolute;
+        top: 150%;
+        right: 25%;
+}
+
+
+.right-side4{
+    float: right;
+    
+}
+
+.right-side4 img{
+    position: absolute;
+    top: 200%;
+    right: 2%;
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    animation: rightside4 3s linear infinite alternate
+}
+@keyframes rightside4 {
+            from{
+                transform:scaleY(1.1);
+            }    
+            to{
+                transform: scaleX(1.1);
+            }
+}
+
+.badp{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: white;
+        position: absolute;
+        top: 215%;
+        right: 25%;
+}
+
+
+.right-side5{
+    float: right;
+    
+}
+
+.right-side5 img{
+    position: absolute;
+    top: 260%;
+    right: 2%;
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    animation: rightside5 3s linear infinite alternate
+}
+@keyframes rightside5 {
+            from{
+                transform:scaleY(1.1);
+            }    
+            to{
+                transform: scaleX(1.1);
+            }
+}
+
+.mynamep{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: white;
+        position: absolute;
+        top: 275%;
+        right: 25%;
+}
+
+
+
+.disco-ball{
+    float: left;
+}
+
+.disco-ball img{
+    position: absolute;
+    top: 42%;
+    left: 0;
+    height: 300px;
+    
+    z-index: -1;
+    animation: ball 3s linear infinite alternate;
+}
+@keyframes ball {
+    from{
+        transform: translateY(15px);
+        z-index: index -1;
+    }
+    to{
+        transform: translateY(-5px);
+        z-index: -1;
+    }
+}
+
+
+button{
+  background-color: #D5CEA3; 
+  border: none;
+  color: white;
+  padding: 10px 20px; 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1px 1px;
+  cursor: pointer;
+  border-radius: 5px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+}
+button:hover{
+	color:black ;
+	background-color: red;
+}
+button a:hover{
+    color: black;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .disco-ball img{
+        display: none;
+    }
+
+
+  
+  
+    .right-side{
+      float: none;
+    } 
+    .right-side img{
+        position: none;
+        top: 30%;
+        left: 30%;
+        height: 200px;
+    }
+    .titaniump{
+        top: 65%;
+        left: 30%;
+        align-items: center;
+        font-size: 10px;
+    }
+
+    .right-side2{
+        float: none;
+    }
+    .right-side2 img{
+        position: none;
+        top: 105%;
+        left: 30%;
+        height: 200px;
+    }
+    .mamap{
+        top: 135%;
+        left: 30%;
+        font-size: 10px;
+        align-items: center;
+    }
+
+    .right-side3{
+        float: none;
+    }
+    .right-side3 img{
+        position: none;
+        top: 180%;
+        left: 30%;
+        height: 200px;
+    }
+
+    .hardp{
+        top: 215%;
+        left: 30%;
+        font-size: 10px;
+        align-items: center;
+    }
+    .right-side4{
+        float: none;
+    }
+    .right-side4 img{
+        position: none;
+        top: 260%;
+        left: 30%;
+        height: 200px;
+    }
+    .badp{
+        top: 300%;
+        left: 30%;
+        font-size: 10px;
+        align-items: center;
+    }
+    .right-side5{
+        float: none;
+    }
+    .right-side5 img{
+        position: none;
+        top: 340%;
+        left: 30%;
+        height: 200px;
+    }
+    .mynamep{
+        top: 375%;
+        left: 30%;
+        font-size: 10px;
+        align-items: center;
+    }
+    
+}
+
+
+
+
+
+.box {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(768px/6);
+    height: 128px;
+    background: url(Jump.png);
+    animation: kick 1s steps(6) infinite;
+    top: 0;
+
+}
+
+
+@keyframes kick {
+    from {
+       background-position: 0;
+    }
+    to{
+        background-position: -768px;
+    }
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 2%;
+    left: 25%;
+
+}
+
+
+footer a {
+	margin: 0;
+	padding: 0;
+	font-size: 30px;
+}
+footer a i{
+	color: red;
+}
+footer .container{
+	display: flex;
+	/* gap: 150px; */
+	justify-content:space-around;
+}
+footer a i:hover{
+	color: black;
+	background-color: blue;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="hits.html">DAVID GUETTA-2</a></div>
+        <nav>
+          <ul>
+            <li><a href="hits.html">Anasayfa</a></li>
+            <li><a href="martingarrix.html">Martin Garrix</a></li>
+            <li><a href="alanwalker.html">Alan Walker</a></li>
+            <li><a href="avicii.html">Avicii</a></li>
+            <li><a href="david-guetta.html">David Guetta</a></li>
+          </ul>
+        </nav>
+      </header>
+
+
+
+<div class="right-side">
+    
+    <img src="./img/david-guetta/titanium--.jpg" alt="">
+</div>
+
+<div class="titaniump">
+<p>David Guetta - Titanium ft. Sia</p>
+<br>
+<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem molestiae aspernatur facere tempore, laborum dolorum totam ratione quam maxime non et, architecto optio atque. Quae nemo repellendus esse ex illo?
+    <br>
+    <br>
+    <button><a href="https://www.youtube.com/watch?v=JRfuAukYTKg">MÜZİĞE ULAŞMAK İÇİN TIKLAYINIZ</a></button>
+</p>
+</div>
+
+<div class="right-side2">
+    <img src="./img/david-guetta/hey-mamajpeg.jpg" alt="">
+</div>
+
+<div class="mamap">
+    <p>David Guetta - Hey Mama</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat illo reprehenderit voluptatibus quas! Vel voluptates ipsum, eaque error dicta magni ullam dolorum corrupti voluptatibus placeat tempora harum atque animi minima! <br>
+        <br>
+        <button><a href="https://www.youtube.com/watch?v=uO59tfQ2TbA">MÜZİĞE ULAŞMAK İÇİN TIKLAYINIZ</a></button>
+    </p>
+</div>
+ 
+<div class="right-side3">
+    <img src="./img/david-guetta/play-hard.jpg" alt="">
+</div>
+<div class="hardp">
+    <p> David Guetta - Play Hard</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam hic accusamus velit tempora maiores saepe. Reiciendis minima rerum similique corporis tenetur atque quos esse aspernatur voluptatibus voluptatum, veniam tempore dolorem?
+        <br>
+        <br>
+         <button><a href="https://www.youtube.com/watch?v=5dbEhBKGOtY">MÜZİĞE ULAŞMAK İÇİN TIKLAYINIZ</a></button></p>
+</div>
+
+<div class="right-side4">
+    <img src="./img/david-guetta/bad.jpg" alt="">
+</div>
+<div class="badp">
+    <p>David Guetta - Bad ft.Vassy</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam architecto exercitationem tenetur consectetur dolor, vero suscipit incidunt quae vitae! Facere suscipit veritatis nihil rem voluptatibus! Provident id doloribus reiciendis eligendi.
+        <br>
+        <br>
+        <button><a href="https://www.youtube.com/watch?v=dzHdo4yxidc">MÜZİĞE ULAŞMAK İÇİN TIKLAYINIZ</a></button>
+    </p>
+    
+</div>
+
+
+<div class="right-side5">
+    <img src="./img/david-guetta/say-my-name.webp" alt="">
+</div>
+<div class="mynamep">
+    <p>David Guetta - Say My Name</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nostrum veniam rem possimus deserunt dignissimos, molestias doloribus culpa labore, repudiandae, minima reiciendis porro ipsum dolor qui facilis repellat eos saepe.
+        <br>
+        <br>
+        <button><a href="https://www.youtube.com/watch?v=pNNMr5glICM">MÜZİĞE ULAŞMAK İÇİN TIKLAYINIZ</a></button>
+    </p>
+</div>
+
+<div class="disco-ball">
+    <img src="./img/david-guetta/gold-disco-ball.png" alt="" preload>
+</div>
+
+
+  
+<footer>
+    <div class="container">
+        <a href=""> <i class="fa-brands fa-youtube"></i></a>
+        <a href=""><i class="fa-brands fa-soundcloud"></i></a> 
+        <a href=""><i class="fa-brands fa-spotify"></i></a> 
+        <a href=""><i class="fa-brands fa-youtube"></i> </a> 
+    </div>
+</footer>
+
+
+  
+  
+
+<div class="box"></div>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+</body>
+</html>
